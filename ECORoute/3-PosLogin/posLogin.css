@@ -1,0 +1,299 @@
+.displayProdutosAceitos {
+  padding: 0.5% 1.5%;
+  margin-top: calc(4vh);
+  /* border: 4px solid red; */
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 2vh;
+}
+
+.leftSidePosLogin {
+  /* border: 2px solid blue; */
+}
+
+.apresentacao {
+  /* border: 2px solid blue; */
+  text-align: center;
+  padding: 1% 5%;
+  text-shadow: 3px 3px 20px rgb(42, 42, 42);
+}
+
+.apresentacao > p {
+  color: white;
+  letter-spacing: 2px;
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 2vw;
+}
+
+.placeGrid {
+  /* border: 1px solid red; */
+  padding: 4%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+/* tamanho das imagens dentro dos cards */
+#img1x1 {
+  max-width: 16vh;
+  max-height: 16vh;
+  border-radius: 50%;
+}
+
+/* molde do card */
+.card {
+  background: radial-gradient(circle, white, white, #6a9c81);
+  border: 10px solid #73adbd;
+  border: 10px solid #3e7667;
+  border-radius: 30px;
+
+  padding: 4vh;
+  height: 15vh;
+  width: 25vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 1s;
+}
+
+/* ação do cursor pelo card para 
+aplicar o efeito e mostrar o back-card */
+/* A propriedade transforme SCALE faz 
+  com que o "HEIGHT" e "WIDTH" da classe 
+  ".card" cresça em tantos % */
+.card:hover {
+  cursor: default;
+  transform: scale(1.1);
+}
+
+/* propriedades do front-card */
+.firstContentCard {
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+/* ato de apenas esconder o front-card*/
+.card:hover .firstContentCard {
+  height: 0px;
+  opacity: 0;
+}
+
+/* back-card escondido */
+.secondContentCard {
+  opacity: 0;
+  transition: all 0.8s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+/* propriedades do back-card */
+.card:hover .secondContentCard {
+  padding: 4vh;
+  height: 15vh;
+  width: 25vh;
+
+  font-size: 1.2vw;
+  font-family: var(--fonte-family-input--Varela);
+  text-align: center;
+  color: #3e7667;
+  font-weight: bold;
+
+  opacity: 1;
+  transform: rotate(0deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSidePosLogin {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid white;
+  border-radius: 30px;
+  padding: 2% 5%;
+  height: 50%;
+  gap: 5vh;
+}
+
+.servicesTitle {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 2vw;
+  color: white;
+  padding: 1% 5%;
+  text-shadow: 3px 3px 20px rgb(42, 42, 42);
+}
+
+.servicesButtons {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 5%;
+  gap: 60px;
+
+  border: 0px solid white;
+  border-radius: 30px;
+}
+
+.divBotoesServicos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------PROPRIEDADES DOS BOTOES RIGHT SIDE (>>>)--------------- */
+/* ------------------------------------------------------------------- */
+
+.box-3 {
+  background-color: #66a182;
+}
+
+.btn {
+  height: 5vh;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-three {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.box-3 > div > span {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1.3vw;
+  color: white;
+  text-shadow: 3px 3px 20px rgb(42, 42, 42);
+}
+
+.box-3 > div > button {
+  all: initial;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1.3vw;
+  color: white;
+  text-shadow: 3px 3px 20px rgb(42, 42, 42);
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
+.userLocalStorage {
+  background-color: #66a182;
+
+  position: relative;
+  margin: auto; /* centraliza */
+  border-radius: 8px;
+
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1.3vw;
+  text-shadow: 3px 3px 20px rgb(42, 42, 42);
+  cursor: default;
+  width: 50%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.userLocalStorage svg {
+  position: absolute;
+}
+
+.userLocalStorage .line {
+  stroke-dasharray: 26; /* tracinhos */
+  stroke-width: 0.1vw;
+  fill: transparent;
+  stroke: rgb(173, 236, 194);
+  animation: svgAnimation 15s linear infinite;
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.findLocalStorageZero {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+#findLocalStorage {
+  letter-spacing: 0px;
+  display: inline-block;
+  animation: userEfect 7s linear infinite;
+}
+
+@keyframes userEfect {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.paddingBoxUser {
+  padding: 5% 0%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}

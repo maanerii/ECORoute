@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Descarte | EcoRoute</title>
+    <link rel="icon" href="../0-HeaderFooter/icon/ecoIcon.png" />
+    <link rel="stylesheet" href="nDescartes.css" />
+    <link rel="stylesheet" href="../0-HeaderFooter/headerFooter.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <div>
+          <button
+            href="../2-Login/login.html"
+            id="actionNavButtonLoginRegister"
+          >
+            <p>Login | Registre-se</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            href="../6-SobreNos/sobreNos.html"
+            id="actionNavButtonSobreNos"
+          >
+            <p>Sobre nós</p>
+          </button>
+        </div>
+        <div>
+          <button
+            href="../index.html"
+            id="actionNavButtonEcoRoute"
+            class="buttonEcoRoute"
+            data-text="Awesome"
+          >
+            <span>&nbsp;ECORoute&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;ECORoute&nbsp;</span
+            >
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="divMain">
+        <div class="firstPlace">
+          <div class="textinho">
+            <p>
+              Reciclar é mais do que um gesto, é um compromisso com nosso
+              planeta.
+            </p>
+          </div>
+          <div class="textinho">
+            <p>
+              Cada item separado para reciclagem é uma pequena vitória contra o
+              desperdício e a poluição.
+            </p>
+          </div>
+          <div class="textinho">
+            <p>
+              Agradeçamos a cada um que dedica tempo e esforço para reciclar.
+            </p>
+          </div>
+          <div class="textinho">
+            <p>
+              Juntos, estamos construindo um futuro mais sustentável para todos.
+            </p>
+          </div>
+        </div>
+        <div class="secondPlace">
+          <div class="divImg">
+            <img
+              src="Imagens-nDescartes/recicle.png"
+              alt="imagemRecicle"
+              class="imagemRecicle"
+            />
+          </div>
+          <div class="formBox">
+            <form onsubmit="return false" id="formArea">
+              <div class="flex">
+                <label class="travarInput">
+                  <input
+                    name="seuUsuario"
+                    id="seuUsuario"
+                    class="normalTextArea"
+                    type="text"
+                    required=""
+                  />
+                  <span>Seu Usuário</span>
+                </label>
+
+                <label class="travarInput">
+                  <input
+                    name="cpf"
+                    id="cpf"
+                    class="normalTextArea"
+                    type="text"
+                    required=""
+                  />
+                  <span>CPF</span>
+                </label>
+
+                <label>
+                  <input
+                    name="cep"
+                    id="cep"
+                    class="normalTextArea"
+                    type="text"
+                    required=""
+                  />
+                  <span>CEP</span>
+                </label>
+                <select
+                  class="comboTextArea"
+                  required=""
+                  name="produto"
+                  id="boxProduto"
+                ></select>
+
+                <!-- <label>
+                  <input
+                    name="produto"
+                    id="produto"
+                    class="normalTextArea"
+                    type="tel"
+                    placeholder=""
+                    required=""
+                  />
+                  <span>Produto para Descarte</span>
+                </label> -->
+
+                <label>
+                  <textarea
+                    name="informacoesAdicionais"
+                    id="informacoesAdicionais"
+                    class="textInputArea"
+                    type="text"
+                    required=""
+                    rows="3"
+                  ></textarea>
+                  <span>Informações Adicionais</span>
+                </label>
+
+                <button
+                  onclick="salvarLixo('../99-TesteMap/Map/googleMaps.html')"
+                  class="fancy"
+                  id="buttonRegistroLixo"
+                >
+                  <div class="positionTracinho">
+                    <span class="tracinho"></span>
+                  </div>
+                  <div class="positionTextoEnviar">
+                    <span class="text">Enviar Agendamento do Descarte</span>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="buttonPlace">
+          <button
+            class="custom-btn"
+            id="actionButtonVoltaPagina"
+            href="../3-PosLogin/posLogin.html"
+          >
+            <p>Voltar ao painel EcoRoute</p>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="rodape">
+      <a
+        href="https://6638ec524253a866a24fb195.mockapi.io/UPX-Coletas"
+        target="_blank"
+        style="text-decoration: none; color: black"
+        >© EcoRoute 2024</a
+      >
+    </footer>
+  </body>
+  <script src="../0-Suports/utils.js"></script>
+  <script src="../0-HeaderFooter/headerFooter.js"></script>
+  <script src="nDescartes.js"></script>
+  <script src="selectBox.js"></script>
+</html>

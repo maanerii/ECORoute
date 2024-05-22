@@ -1,0 +1,113 @@
+li {
+  list-style-type: none;
+}
+
+.mainDiv {
+  padding: 2%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vw;
+}
+
+.firstSection {
+  padding: 2%;
+
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  gap: 8vw;
+}
+
+.ecoCoinIcon {
+  border: 0.5vw solid #b1f0c1;
+  border-radius: 50%;
+  padding: 2vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ecoCoinIconID {
+  max-width: 8vh;
+  max-height: 8vh;
+}
+.legendEcoFieldset {
+  border: 0.5vw solid #b1f0c1;
+  border-radius: 30px;
+  padding: 1vw;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.7vw;
+  font-family: var(--fonte-family-input--Varela);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+}
+
+.ecoFieldset {
+  border: 0.5vw solid #b1f0c1;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.ecoFieldset > ul {
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1vw;
+  color: aliceblue;
+  padding: 7% 0%;
+}
+
+.ecoFieldset > div > ul {
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1vw;
+  color: aliceblue;
+  padding: 10% 0%;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* ---------------------------BOTAO VOLTAR---------------------------- */
+/* ------------------------------------------------------------------- */
+
+.buttonPlace {
+  margin-bottom: 1vh;
+}
+
+.custom-btn {
+  background: transparent;
+  backdrop-filter: 0px;
+  border: 1px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  text-shadow: 5px 5px 20px rgb(42, 42, 42);
+}
+
+.custom-btn:hover {
+  border: 1px solid rgb(203, 231, 204);
+  transform: scale(1.1);
+}
+
+.custom-btn > p {
+  color: #fff;
+  font-family: var(--fonte-family-button--GillSans);
+  font-size: 15px;
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */

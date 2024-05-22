@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.divMainMap {
+  /* border: 1px solid red; */
+  margin-top: calc(7vh);
+
+  display: grid;
+  grid-template-columns: 30% 15% 30%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.firstSection {
+  /* border: 1px solid blue; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.secondSection {
+  /* border: 1px solid yellow; */
+  padding: 1%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputFieldCEP,
+.inputField {
+  opacity: 90%;
+  padding: 0.2vw 0vw;
+  border: 0.1vw solid rgb(50, 73, 50);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.inputField {
+  pointer-events: none;
+}
+
+.thirdSection {
+  /* border: 1px solid yellow; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.divMapForms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.divMapForms > button {
+  width: 10vw;
+}
+
+#map {
+  border: 5px solid greenyellow;
+  border-radius: 2vw;
+  height: 26vw;
+  width: 26vw;
+  background: #ddd;
+}
+
+/* Legend thirdSection */
+.resultFieldset > legend {
+  cursor: default;
+  font-family: var(--fonte-family-input--Varela);
+  text-align: center;
+}
+
+/* CEP, RUA, BAIRRO, ESTADO, ORIGEM e Todos conteúdo interno da thirdSection */
+.cepFieldset > p > label,
+.infosFieldset > p > label,
+.resultFieldset > p {
+  font-size: 20px;
+  font-family: var(--fonte-family-input--Varela);
+}
+
+/* Coteúdo interno das input CEP RUA BAIRRO ESTADO ORIGEM */
+.cepFieldset > p > input,
+.infosFieldset > p > input,
+.resultFieldset > div {
+  font-size: 17px;
+  text-align: center;
+}
+
+/* Tira a borda padrão do fieldset da Div CEP + Divs Get Campos + Div Resultados */
+.cepFieldset,
+.infosFieldset,
+.resultFieldset {
+  /* border: 2px solid greenyellow; */
+  /* border-radius: 10px; */
+  border: none;
+}
+
+/* Div superior CEP da secondSection */
+.cepFieldset {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Div inferior Gets da secondSection */
+.infosFieldset {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+/* Trabalha no espaçamento entre os Label e Input da secondSection inteira, tanto a de cima quanto a de baixo */
+.cepFieldset > p,
+.infosFieldset > p {
+  /* border: 1px solid white; */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+
+/* Div dentro da thirdSection */
+.resultFieldset {
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Titulo da tag 'legend' da thirdSection */
+.resultFieldset > legend {
+  color: white;
+  text-shadow: 5px 5px 20px rgb(42, 42, 42);
+  font-size: 1.5vw;
+}
+
+/* Conteudo interno da div de dentro da thirdSection  */
+.pResultados {
+  color: white;
+  font-size: 1vw;
+  text-shadow: 5px 5px 20px rgb(42, 42, 42);
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* HTML <button class="button-33" role="button">Button 33</button> */
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1vw;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+/* ------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------ */
+.custom-btn {
+  background: transparent;
+  backdrop-filter: 0px;
+  border: 1px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  text-shadow: 5px 5px 20px rgb(42, 42, 42);
+}
+
+.custom-btn:hover {
+  border: 1px solid rgb(203, 231, 204);
+  transform: scale(1.1);
+}
+
+.custom-btn > p {
+  color: #fff;
+  font-family: var(--fonte-family-button--GillSans);
+  font-size: 15px;
+}
+/* ------------------------------------------------------------------------------------ */

@@ -1,0 +1,316 @@
+.divMain {
+  padding: 1% 2%;
+  margin-top: 3.5vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vh;
+}
+
+.firstPlace {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 0.5%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5%;
+}
+
+.textinho {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1)
+    ),
+    rgb(239, 239, 239);
+  width: 20%;
+  transition: 400ms;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 1.5%;
+  cursor: default;
+  letter-spacing: 1px;
+}
+
+.textinho > p {
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 2%;
+}
+
+.textinho:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+}
+
+.secondPlace {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  padding: 1%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8vw;
+}
+
+.divImg {
+}
+
+.imagemRecicle {
+  max-width: 50vh;
+  max-height: 50vh;
+  filter: drop-shadow(10px 10px 20px rgb(86, 117, 86));
+
+  position: relative;
+  top: -50vh;
+  transform: translateY(100%);
+  transition: 1.5s ease;
+}
+
+.formBox {
+  background: linear-gradient(to right, #778672, #748c61, #81c583, #a6e991);
+  box-shadow: 15px 15px 25px rgb(71, 71, 71);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  width: 30vw;
+}
+
+.flex {
+  /* width: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.textInputArea {
+  width: 30vh;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #355891;
+  border-radius: 5px;
+}
+
+#formArea label {
+  position: relative;
+}
+
+.normalTextArea {
+  width: 30vh;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #355891;
+  border-radius: 5px;
+}
+
+/* palavras: Seu Usuário, CPF, Cidade/CEP */
+.normalTextArea + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #355891;
+  cursor: text;
+  transition: 0.3s ease;
+  font-family: var(--fonte-family-input--Varela);
+}
+
+.normalTextArea:placeholder-shown + span {
+  top: 15px;
+  font-size: 14px;
+}
+
+.normalTextArea:focus + span,
+.normalTextArea:valid + span,
+.normalTextArea:hover + span {
+  top: 30px;
+  font-size: 11px;
+  /* font-weight: 600; */
+}
+
+.normalTextArea:valid + span {
+  color: green;
+}
+
+.comboTextArea {
+  font-size: 15px;
+  width: 32.6vh;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #355891;
+  color: #355891;
+  border-radius: 5px;
+  font-family: var(--fonte-family-input--Varela);
+}
+
+.comboTextAreaJS {
+  color: #355891;
+}
+
+.comboTextAreaOptionsJS {
+  color: green;
+}
+
+.comboTextArea:valid {
+  color: green;
+}
+
+.textInputArea,
+.normalTextArea {
+  font-family: var(--fonte-family-input--Varela);
+  font-size: 14px;
+}
+
+/* palavra: Informações */
+.textInputArea + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: #355891;
+  cursor: text;
+  transition: 0.3s ease;
+  font-family: var(--fonte-family-input--Varela);
+}
+
+.textInputArea:placeholder-shown + span {
+  top: 40px;
+  font-size: 14px;
+}
+
+.textInputArea:focus + span,
+.textInputArea:valid + span,
+.textInputArea:hover + span {
+  top: 50px;
+  font-size: 14px;
+  /* font-weight: 600; */
+}
+
+.textInputArea:valid + span {
+  color: green;
+}
+
+.travarInput {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ------------------------------------------------------------------- */
+/* ---------------------BOTAO ENVIAR AGENDAMENTO---------------------- */
+/* ------------------------------------------------------------------- */
+
+/* estilizacao do botao  */
+.fancy {
+  background-color: white;
+  border: 2px solid #355891;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #355891;
+  cursor: pointer;
+  width: 25vw;
+  outline: none;
+  overflow: visible;
+  padding: 8px 0px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positionTracinho {
+}
+
+.positionTextoEnviar {
+  display: flex;
+}
+
+/* estilizacao do TRACINHO do botao */
+.tracinho {
+  content: "";
+  margin: 2px;
+  width: 1.4vw;
+  height: 2px;
+  background: #355891;
+  display: flex;
+  transition: background 0.3s linear, width 0.3s linear;
+  font-size: 1vw;
+}
+
+/* estilizacao do TEXTO do botao */
+.text {
+  letter-spacing: 2px;
+  line-height: 1.33333em;
+  padding-left: 1em;
+  font-size: 0.7vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  color: #355891;
+  font-weight: bold;
+}
+
+.fancy:hover {
+  color: #355891;
+  background: #5f82a9;
+}
+
+.tracinho:hover {
+  width: 1.5rem;
+  background: #355891;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 2em;
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* ---------------------------BOTAO VOLTAR---------------------------- */
+/* ------------------------------------------------------------------- */
+
+.buttonPlace {
+  margin-bottom: 10vh;
+}
+
+.custom-btn {
+  background: transparent;
+  backdrop-filter: 0px;
+  border: 1px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  text-shadow: 5px 5px 20px rgb(42, 42, 42);
+}
+
+.custom-btn:hover {
+  border: 1px solid rgb(203, 231, 204);
+  transform: scale(1.1);
+}
+
+.custom-btn > p {
+  color: #fff;
+  font-family: var(--fonte-family-button--GillSans);
+  font-size: 15px;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */

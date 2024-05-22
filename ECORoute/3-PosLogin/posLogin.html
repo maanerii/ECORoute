@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | EcoRoute</title>
+    <link rel="icon" href="../0-HeaderFooter/icon/ecoIcon.png" />
+    <link rel="stylesheet" href="posLogin.css" />
+    <link rel="stylesheet" href="../0-HeaderFooter/headerFooter.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <div>
+          <button
+            href="../2-Login/login.html"
+            id="actionNavButtonLoginRegister"
+          >
+            <p>Login | Registre-se</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            href="../6-SobreNos/sobreNos.html"
+            id="actionNavButtonSobreNos"
+          >
+            <p>Sobre nós</p>
+          </button>
+        </div>
+        <div>
+          <button
+            href="../index.html"
+            id="actionNavButtonEcoRoute"
+            class="buttonEcoRoute"
+            data-text="Awesome"
+          >
+            <span>&nbsp;ECORoute&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;ECORoute&nbsp;</span
+            >
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="displayProdutosAceitos">
+        <div class="leftSidePosLogin">
+          <div class="apresentacao">
+            <p>Produtos que o ECORoute aceita para descarte</p>
+          </div>
+          <!-- Div com a Grid de Cards -->
+          <div class="placeGrid">
+            <!-- Primeiro Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/1-digitalClock.gif"
+                alt="digitalClock"
+                id="img1x1"
+              />
+              <div class="secondContentCard">
+                Relógios Analógicos e Digitais (ID2306)
+              </div>
+            </div>
+            <!-- Segundo Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/2-tv.gif"
+                alt="tv"
+                id="img1x1"
+              />
+              <div class="secondContentCard">Televisões (ID1256)</div>
+            </div>
+            <!-- Terceiro Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/3-carBattery.gif"
+                alt="carBattery"
+                id="img1x1"
+              />
+              <div class="secondContentCard">Baterias de Carro (ID8801)</div>
+            </div>
+            <!-- Quarto Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/4-battery.gif"
+                alt="Battery"
+                id="img1x1"
+              />
+              <div class="secondContentCard">Pilhas e Baterias (ID0042)</div>
+            </div>
+            <!-- Quinto Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/5-circuitBoard.gif"
+                alt="circuitBoard"
+                id="img1x1"
+              />
+              <div class="secondContentCard">Circuitos e Chips (ID9009)</div>
+            </div>
+            <!-- Sexto Card -->
+            <div class="card">
+              <img
+                class="firstContentCard"
+                src="./Imagens-PosLogin/6-devices.gif"
+                alt="devices"
+                id="img1x1"
+              />
+              <div class="secondContentCard">
+                Celulares, Tablets e Notebooks (ID1203)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightSidePosLogin">
+          <div class="servicesTitle">
+            <p>Serviços</p>
+          </div>
+          <div class="servicesButtons">
+            <div class="userLocalStorage">
+              <svg
+                height="100%"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  rx="8"
+                  ry="8"
+                  class="line"
+                  height="100%"
+                  width="100%"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="paddingBoxUser">
+                Usuário
+                <div id="findLocalStorageZero">
+                  <div id="findLocalStorage"></div>
+                </div>
+              </div>
+            </div>
+            <div class="divBotoesServicos">
+              <div
+                class="box-3"
+                id="actionButtonReciclar"
+                href="../4-NovosDescartes/nDescartes.html"
+              >
+                <div class="btn btn-three">
+                  <button>
+                    <p>Recicle</p>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="box-3"
+                id="actionButtonEcoCoins"
+                href="../7-EcoCoins/ecoCoins.html"
+              >
+                <div class="btn btn-three">
+                  <span id="actionButtonEcoCoins">EcoCoins</span>
+                </div>
+              </div>
+
+              <div
+                class="box-3"
+                id="actionButtonMapa"
+                href="../99-TesteMap/Map/googleMaps.html"
+              >
+                <div class="btn btn-three">
+                  <button>
+                    <p>Mapa</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="rodape">© EcoRoute 2024</footer>
+  </body>
+  <script src="../0-HeaderFooter/headerFooter.js"></script>
+  <script src="posLogin.js"></script>
+</html>
